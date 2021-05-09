@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import { grey } from "@material-ui/core/colors";
-import { Grid, TextField } from "@material-ui/core";
+import { Grid, Link, TextField } from "@material-ui/core";
 import { getUnique } from './utils/uniqueWords'
 
 const useStyles = makeStyles((theme) => ({
@@ -35,6 +35,7 @@ function App() {
   return (
     <Paper elevation={0} className={classes.paper} variant="outlined">
       <h2 className={classes.textCenter}> Fun.py </h2>
+      <h4 className={classes.textCenter}> Apparently people saw my tiktok <Link target="_blank" href="https://vm.tiktok.com/ZMebPnohw/">here</Link></h4>
       <div className={classes.root}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
